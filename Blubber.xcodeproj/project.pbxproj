@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		606DD8A11E15AF8100716CC2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DD8A01E15AF8100716CC2 /* FeedVC.swift */; };
 		60A6BAFE1E14ABEB0034B784 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A6BAFD1E14ABEB0034B784 /* FancyField.swift */; };
 		60A6BB001E14AD240034B784 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A6BAFF1E14AD240034B784 /* FancyBtn.swift */; };
 		60AAB74E1E11951A00052B54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60AAB74D1E11951A00052B54 /* GoogleService-Info.plist */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		00379082D48562B4999E9ADE /* Pods-Blubber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blubber.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blubber/Pods-Blubber.release.xcconfig"; sourceTree = "<group>"; };
+		606DD8A01E15AF8100716CC2 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		60A6BAFD1E14ABEB0034B784 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		60A6BAFF1E14AD240034B784 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		60AAB74D1E11951A00052B54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				60E8B1251E0F12E400865752 /* SignInVC.swift */,
+				606DD8A01E15AF8100716CC2 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				60E8B1261E0F12E400865752 /* SignInVC.swift in Sources */,
 				60BBED171E11B4C6008503EF /* RoundBtn.swift in Sources */,
 				60E8B1241E0F12E400865752 /* AppDelegate.swift in Sources */,
+				606DD8A11E15AF8100716CC2 /* FeedVC.swift in Sources */,
 				60BBED121E11B18A008503EF /* FancyView.swift in Sources */,
 				60BBED151E11B225008503EF /* Constants.swift in Sources */,
 				60A6BB001E14AD240034B784 /* FancyBtn.swift in Sources */,

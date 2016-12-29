@@ -109,10 +109,50 @@
                             <constraint firstItem="5x8-cq-aeE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rAZ-Mz-Twy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="pKz-WF-36r" kind="show" identifier="goToFeed" id="Sn1-jn-kW2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="XdI-b7-YWA">
+            <objects>
+                <viewController id="pKz-WF-36r" customClass="FeedVC" customModule="Blubber" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="giE-VK-0cJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="NDe-td-rJh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vHp-5x-ooa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixZ-Qh-i8L">
+                                <rect key="frame" x="142" y="308" width="75" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="pKz-WF-36r" eventType="touchUpInside" id="FXU-pn-3kL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ixZ-Qh-i8L" firstAttribute="centerY" secondItem="vHp-5x-ooa" secondAttribute="centerY" id="HWO-P4-e0S"/>
+                            <constraint firstItem="ixZ-Qh-i8L" firstAttribute="centerX" secondItem="vHp-5x-ooa" secondAttribute="centerX" id="WeR-5L-OJn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="hYK-Ye-Mo1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="467-UA-fxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="123"/>
         </scene>
     </scenes>
     <resources>
