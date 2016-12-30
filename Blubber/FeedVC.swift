@@ -9,8 +9,11 @@
 import UIKit
 import SwiftKeychainWrapper
 import Firebase
+
 class FeedVC: UIViewController {
 
+    var geoFire = GeoFire!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
