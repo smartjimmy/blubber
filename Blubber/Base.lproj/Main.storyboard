@@ -129,8 +129,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixZ-Qh-i8L">
-                                <rect key="frame" x="142" y="308" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixZ-Qh-i8L">
+                                <rect key="frame" x="150" y="617" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Sign Out">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -139,20 +140,26 @@
                                     <action selector="signOutTapped:" destination="pKz-WF-36r" eventType="touchUpInside" id="FXU-pn-3kL"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rya-7i-AXl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ixZ-Qh-i8L" firstAttribute="centerY" secondItem="vHp-5x-ooa" secondAttribute="centerY" id="HWO-P4-e0S"/>
-                            <constraint firstItem="ixZ-Qh-i8L" firstAttribute="centerX" secondItem="vHp-5x-ooa" secondAttribute="centerX" id="WeR-5L-OJn"/>
+                            <constraint firstItem="rya-7i-AXl" firstAttribute="top" secondItem="vHp-5x-ooa" secondAttribute="top" id="4QA-zh-DNd"/>
+                            <constraint firstAttribute="trailing" secondItem="rya-7i-AXl" secondAttribute="trailing" id="5vG-ax-Jrw"/>
+                            <constraint firstItem="rya-7i-AXl" firstAttribute="leading" secondItem="vHp-5x-ooa" secondAttribute="leading" id="nRo-NS-jqX"/>
+                            <constraint firstItem="NDe-td-rJh" firstAttribute="top" secondItem="rya-7i-AXl" secondAttribute="bottom" id="zfO-lA-cMh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="rya-7i-AXl" id="q3z-hk-2cF"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="hYK-Ye-Mo1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="467-UA-fxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="123"/>
+            <point key="canvasLocation" x="856.79999999999995" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>
